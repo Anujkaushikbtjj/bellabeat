@@ -108,8 +108,7 @@ activity_types_distance <- activity_types_distance %>%
 activity_combined <- activity_types_minutes %>%
   left_join(activity_types_distance, by = c("Id", "ActivityDate", "Activity_type"))
 
-Calculate the correlation coefficients for each activity type and calories burnt
-```r
+# Calculate the correlation coefficients for each activity type and calories burnt
 cor(
   activity_combined %>% filter(activity_combined$Activity_type == "VeryActiveMinutes") %>% pull(Minutes), 
   activity_combined %>% filter(activity_combined$Activity_type == "VeryActiveMinutes") %>% pull(Distance), 
