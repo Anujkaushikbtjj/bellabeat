@@ -79,7 +79,7 @@ ggplot(data = daily_activity, aes(x = TotalSteps, y = Calories)) +
   labs(title = "Total Steps vs Calories Burned", x = "Total Steps", y = "Calories Burned") +
   theme_minimal()
 ```
-A correlation coefficient of 0.59 is a good positive correlation. This means that more calories burned with more steps taken as expected.
+A correlation coefficient of 0.59 is a good positive correlation. This means that more calories burned with more steps taken as expected.  
 ![totalsteps_vs_caloriesburned](https://github.com/user-attachments/assets/50ba9f5d-df05-47ae-91b4-1b20f52cc12e)
 
 ### Activity Type Analysis
